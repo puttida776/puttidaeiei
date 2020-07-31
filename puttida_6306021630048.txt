@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: puttida, Configuration: Debug Win32 ------
+1>  homework.cpp
+1>  puttida.vcxproj -> D:\ploy\visual\Homework4\puttida\Debug\puttida.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
