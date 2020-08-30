@@ -1,45 +1,22 @@
 #include <iostream>
-#include <string>
-#include <math.h>
 using namespace std;
+int CalAge (int);
 int main()
 {
-    string name;
-    short salary;
-    float sale;
-    float commission;
-
-    cout << "Enter name:";
-    cin >> name;
-    cout << "Enter salary:";
-    cin >> salary;
-    cout << "Enter sale:";
-    cin >> sale;
-    cout << "commission:";
-    cin >> commission;
-
-    cout << "Your name" << name << endl;
-    cout << "Total" << (sale * commission) + salary << endl;
-
-
-    return 0;
+	int year;
+	for(int x=1 ; x<=3 ; x++);
+	{
+		cout<< "Enter your year" << " " << "x" << " : ";
+		cin>> year ;
+		cout<< "Age" << "x" ;
+		CalAge (year);
+	}
+	return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+	
+ int CalAge(int year)
+{
+	cout<<" : " <<(2563-year);
+	cout<<endl;
+	return (year);
+}
