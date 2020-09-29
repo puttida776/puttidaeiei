@@ -1,22 +1,41 @@
 #include <iostream>
+#include <iomanip>
+#include <string>
 using namespace std;
-int CalAge (int);
+void display(int,int); 
+int cal_bonus(int);
 int main()
 {
-	int year;
-	for(int x=1 ; x<=3 ; x++);
-	{
-		cout<< "Enter your year" << " " << "x" << " : ";
-		cin>> year ;
-		cout<< "Age" << "x" ;
-		CalAge (year);
+	int num;
+	int*salary = new int[num];
+	cout<<"Enter Number of preson : ";
+	cin>>num;
+	for(int a = 0; a < num ; a++)
+	{	cout <<"Enter the salary ["<<a+1<<"] : ";
+		cin >> salary[a];
 	}
-	return (0);
+	display(salary,num);
+
+	return 0;
+
 }
-	
- int CalAge(int year)
+void display(int salary[],int num) 	
 {
-	cout<<" : " <<(2563-year);
-	cout<<endl;
-	return (year);
+	int * bonus = new int [num];
+	cout<<"There are ["<<num<<"]"<<"person"<<endl;
+		for(int a=0;a< num;a++)
+		{ cout <<"The salary for person["<<a+1<<"]"<<endl;
+		bonus[a] = cal_bonus(salary[a]);
+		cout<<"and bonus "<<bonus[a]<<endl;
+		
+		}
+
+
+}
+int cal_bonus(int salary)
+{
+	int bonus = salary*2;
+	return bonus;
+
+
 }
